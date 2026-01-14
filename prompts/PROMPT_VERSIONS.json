@@ -1,0 +1,107 @@
+{
+  "version_history": {
+    "system_prompt.j2": [
+      {
+        "version": "1.0",
+        "date": "2025-12-03",
+        "changes": "Initial version with basic interviewer role and security rules",
+        "lines": 21
+      },
+      {
+        "version": "2.0",
+        "date": "2025-12-04",
+        "changes": "Added comprehensive context guidance (question difficulty progression, handling guidelines, question quality examples, question type distribution 40/40/20)",
+        "lines": 90,
+        "breaking_changes": false
+      }
+    ],
+    "initial_prompt.j2": [
+      {
+        "version": "1.0",
+        "date": "2025-12-03",
+        "changes": "Initial version with simple greeting instruction",
+        "lines": 2
+      },
+      {
+        "version": "1.1",
+        "date": "2025-12-04",
+        "changes": "Added few-shot examples for 3 job types (Software Engineering, Data Science, Product Management)",
+        "lines": 18,
+        "breaking_changes": false
+      }
+    ],
+    "next_question_prompt.j2": [
+      {
+        "version": "1.0",
+        "date": "2025-12-03",
+        "changes": "Initial version with basic next question instruction",
+        "lines": 3
+      },
+      {
+        "version": "1.1",
+        "date": "2025-12-04",
+        "changes": "Added 5 scenario-based few-shot examples (complete answer, vague answer, rambling, transitions, advanced questions)",
+        "lines": 30,
+        "breaking_changes": false
+      },
+      {
+        "version": "1.2",
+        "date": "2025-12-04",
+        "changes": "Added 3-step Chain-of-Thought reasoning (evaluate answer quality, choose difficulty, ensure job relevance)",
+        "lines": 52,
+        "breaking_changes": false
+      }
+    ],
+    "feedback_prompt.j2": [
+      {
+        "version": "1.0",
+        "date": "2025-12-03",
+        "changes": "Initial version with basic feedback structure",
+        "lines": 20
+      },
+      {
+        "version": "1.1",
+        "date": "2025-12-04",
+        "changes": "Added structured feedback format with key sections (Overall, Strengths, Areas for Improvement, Recommendations)",
+        "lines": 45,
+        "breaking_changes": false
+      },
+      {
+        "version": "1.2",
+        "date": "2025-12-04",
+        "changes": "Added 5-step Chain-of-Thought analysis (review answers, assess requirements, identify patterns, determine ratings, form recommendation)",
+        "lines": 67,
+        "breaking_changes": false
+      },
+      {
+        "version": "1.3",
+        "date": "2025-12-04",
+        "changes": "Added comprehensive scoring rubrics (Technical Competency 4-tier, Communication Skills 4-tier, Cultural Fit 3-tier with percentage ranges)",
+        "lines": 82,
+        "breaking_changes": false
+      }
+    ],
+    "validation_prompt.j2": [
+      {
+        "version": "1.0",
+        "date": "2025-12-03",
+        "changes": "Initial version for job description validation",
+        "lines": 5,
+        "breaking_changes": false
+      }
+    ]
+  },
+  "current_versions": {
+    "system_prompt.j2": "2.0",
+    "initial_prompt.j2": "1.1",
+    "next_question_prompt.j2": "1.2",
+    "feedback_prompt.j2": "1.3",
+    "validation_prompt.j2": "1.0"
+  },
+  "metadata": {
+    "last_updated": "2025-12-04",
+    "total_prompts": 5,
+    "versioning_scheme": "semantic (major.minor)",
+    "notes": "Major version bump = breaking changes or complete rewrites. Minor version bump = additions/improvements that maintain backward compatibility."
+  }
+}

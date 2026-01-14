@@ -1,0 +1,16 @@
+{# PROMPT VERSION: 1.0 | Last Updated: 2025-12-03 | Changes: Initial version for job description validation #}
+Analyze if the following text is a valid job description or job posting.
+
+A valid job description should contain:
+- Job title or role information
+- Required skills, qualifications, or experience
+- Job responsibilities or duties
+- Company information (optional but common)
+
+Respond with ONLY "VALID" or "INVALID".
+
+If the text is random gibberish, meaningless characters, or clearly not a job posting, respond "INVALID".
+If it looks like a legitimate job description (even if brief), respond "VALID".
+
+Text to analyze:
+{{ job_description }}

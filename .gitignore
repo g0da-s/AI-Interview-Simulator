@@ -1,0 +1,10 @@
+.env
+saved_interviews/
+saved_sessions/
+*.mp3
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.log

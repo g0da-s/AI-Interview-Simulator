@@ -1,0 +1,13 @@
+[project]
+name = "gsmulk-ae-1-4"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "audio-recorder-streamlit>=0.0.10",
+    "jinja2>=3.1.2",
+    "openai>=2.8.1",
+    "python-dotenv>=1.2.1",
+    "streamlit>=1.30.0",
+]
